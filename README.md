@@ -1,10 +1,17 @@
 # esab16
 
-A Clojure library designed to ... well, that part is up to you.
+Invisible base16.
 
 ## Usage
 
-FIXME
+```clojure
+(require '[esab16.core :as esab16])
+;=> nil
+(esab16/str-encode "Hello World!")
+;=> "‬⁣⁡⁠⁡⁬⁡⁬⁡⁯"
+(esab16/str-decode *1)
+;=> "Hello World!"
+```
 
 ## License
 
