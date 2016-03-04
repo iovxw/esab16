@@ -1,5 +1,7 @@
 # esab16
 
+[![Clojars Project](https://img.shields.io/clojars/v/net.iovxw/esab16.svg)](https://clojars.org/net.iovxw/esab16)
+
 Invisible base16.
 
 ## Usage
