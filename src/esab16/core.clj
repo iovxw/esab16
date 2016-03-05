@@ -31,11 +31,11 @@
                  (count string))
         buf (ByteBuffer/allocate (/ length 2))]
     (doseq [i (range 0 length 2)]
-      (.put buf (byte (bit-or (-> (.charAt string i)
-                                  dec-char
-                                  (bit-shift-left 4))
-                              (-> (.charAt string (inc i))
-                                  dec-char)))))
+      (.put buf (unchecked-byte (bit-or (-> (.charAt string i)
+                                            dec-char
+                                            (bit-shift-left 4))
+                                        (-> (.charAt string (inc i))
+                                            dec-char)))))
     (.array buf)))
 
 (defn str-encode
