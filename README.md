@@ -9,10 +9,10 @@ Invisible base16.
 ```clojure
 (require '[esab16.core :as esab16])
 ;=> nil
-(esab16/str-encode "Hello World!")
+(esab16/str-encode "Hello 世界!")
 ;=> "‬⁣⁡⁠⁡⁬⁡⁬⁡⁯"
 (esab16/str-decode *1)
-;=> "Hello World!"
+;=> "Hello 世界!"
 ```
 
 ## License
